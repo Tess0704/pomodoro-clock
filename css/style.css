@@ -1,0 +1,80 @@
+body {
+  background-color: #333333;
+  text-align: center;
+  color: white;
+}
+h1 {
+  padding: 20px;
+  font-family: Lobster;
+}
+#settings {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  /*   justify-content:center; */
+  padding: 20px;
+}
+#session {
+  padding-left: 80px;
+}
+.num,
+.incre,
+.decre {
+  font: 1.5em sans-serif;
+  padding: 5px 5px 0px 0px;
+  
+}
+.incre,
+.decre,
+.circle{
+  cursor: pointer;
+}
+
+.circle {
+  background-color: #333333;
+/*   height: 100%; */
+  color: white;
+}
+.hourglass {
+  padding-top:30px;
+  margin: 0 auto;
+  text-align: center;
+  width: 300px;
+  height: 300px;
+  font-size: 4em;
+  border: 2px solid #99CC00;
+  border-radius: 50%;
+  cursor: pointer;
+  position: relative;
+  z-index: 20;
+  overflow: hidden;
+}
+
+.ststus{
+  text-align: center;
+  line-height: 150px;
+  font-size: .6em;
+}
+.circle .hourglass:before {
+  content: '';
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  border-radius: 50%;
+  z-index: 2;
+  border: 4px solid #333333;
+}
+.circle .fill {
+
+  background-color:#99CC00;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  z-index: -1;
+}
+
+
+
